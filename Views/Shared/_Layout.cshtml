@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css.map" />
+</head>
+<body>
+    <center>
+        <a href="/Home/Index" class="btn btn-primary">Home</a>
+        <a href="/Home/aboutus" class="btn btn-dark">About</a>
+        <a href="/Home/contactus" class="btn btn-danger">Contact</a>
+        <a href="/Home/privacy" class="btn btn-secondary">privacy</a>
+    </center>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class=" fixed-bottom">
+        <center>
+            copyright &copy; zezo @DateTime.Now.Year
+        </center>
+    </footer>
+</body>
+</html>
